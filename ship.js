@@ -10,8 +10,9 @@ const checkForShip = (player, coordiantes) => {
       )
     })[0]
 
-    if (!shipPresent) return false
+    if (shipPresent) return true
   }
+  return false
 }
 
 module.exports.checkForShip = checkForShip
